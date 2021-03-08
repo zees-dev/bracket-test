@@ -25,7 +25,7 @@ through the string.
 Implementation details in [main.go](./main.go)
 
 Known issues:
-`BracketStack` data structure is no concurrency-safe (multiple go-routines writing to this stack will cause isses).
+`BracketStack` data structure is not concurrency-safe (multiple go-routines writing to this stack will cause isses).\
 To resolve this, a mutex should be used upon reading/writing to/from the slice data structure (stack).
 
 ## Tests
